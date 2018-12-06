@@ -1,0 +1,27 @@
+.header{
+    background-color: #4b4159;
+}
+.content img{
+    height: auto;
+    display: block;
+    margin: 0 auto 30px;
+}
+.hobby{
+    color: #222;
+    line-height: 50px;
+    padding-top: 50px;
+    font-size: 20px;
+}
+.hobby strong{
+    color: #f69802;
+}
+.content .intro{
+   padding: 30px 0;
+}
+.content .intro p{
+    text-indent: 2em;
+    line-height: 28px;
+    font-size: 16px;
+    padding-bottom: 20px;
+    color: #444;
+}

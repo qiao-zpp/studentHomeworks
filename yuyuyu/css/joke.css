@@ -1,0 +1,60 @@
+.header{
+    background-color: #4b4159;
+}
+.content img{
+    height: auto;
+    display: block;
+    margin: 0 auto 30px;
+}
+.jokelist{
+    padding: 30px 0;
+}
+.jokelist li{
+    padding-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 26px;
+}
+.mesBoard{
+    padding: 30px;
+}
+.mesBoard .icon{
+    width:60px;
+    height: 60px;
+    border-radius: 5px;
+}
+.mesBoardBox{
+    width: 1000px;
+}
+.mesBoardBox textarea{
+    border-radius: 5px;
+    width: 100%;
+    height: 150px;
+    line-height: 28px;
+    text-indent: 2em;
+}
+.mesBoardBox button{
+    width: 120px;
+    height: 30px;
+    margin-top: 10px;
+}
+.commentTitle{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    font-size: 18px;
+    color: #111;
+}
+.msgList{
+    border-top: 1px solid #ccc;
+}
+.msgList li{
+    padding: 20px;
+    font-size: 14px;
+    color: #333;
+    line-height: 28px;
+}
+.msgList .icon{
+    width:50px;
+    height: 50px;
+    border-radius: 5px;
+}

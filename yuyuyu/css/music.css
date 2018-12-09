@@ -41,3 +41,37 @@
 .musicBox .musicList li a{
     text-decoration: underline;
 }
+.musicListBox h3{
+    line-height: 40px;
+    color: #222;
+    border-bottom: 2px solid #f69802;
+    font-size: 20px;
+    text-indent: 2em;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.musicListBox table{
+    width: 100%;
+    margin-top: 50px;
+}
+.musicListBox table td,.musicListBox table th{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #333;
+    border-bottom: 1px solid #edc9a3;
+    text-align: center;
+}
+.musicListBox table th{
+    font-size: 16px;
+}
+.musicListBox .play{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    background: url("../musicAppreciation/img/play.png") no-repeat;
+    background-size: 100% 100%;
+    vertical-align: middle;
+    margin-left: 20px;
+    cursor: pointer;
+}

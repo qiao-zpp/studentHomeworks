@@ -25,17 +25,32 @@ a:hover{
     background-size: 100% auto;
     color: #333;
 }
+.header .logoIcon{
+    display: inline-block;
+    height: 60px;
+    width: auto;
+    vertical-align: top;
+    margin-right: 15px;
+}
 .header .innerBox{
     height: 60px;
     padding: 0 20px;
-    background-color: rgba(127, 215, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .header .logo{
     width: 25%;
     float: left;
+    color: #fff;
 }
 .header .logo h1{
     font-size: 20px;
+    height: 60px;
+    line-height: 60px;
+    color: #9c872c;
+}
+.header .logo h1 a{
+    color: #9c872c;
+    letter-spacing: 2px;
 }
 .header .nav{
     width: 70%;

@@ -11,14 +11,15 @@
     <div class="header">
         <div class="areaHeart">
             <div class="innerBox clearfix">
-                <div class="logo"><h1><a href="./index.html">计科3班</a></h1></div>
+                <div class="logo"><h1><a href="../index.html"><img class="logoIcon" src="../img/logo.png" alt="">计科3班</a></h1></div>
                 <div class="nav">
                     <ul>
-                        <li><a href="#">班级介绍</a></li>
-                        <li><a href="#">学习园地</a></li>
-                        <li><a href="#">通讯录</a></li>
-                        <li><a href="#">班级相册</a></li>
-                        <li><a href="#">下载专区</a></li>
+                        <li><a href="../index.html">班级主页</a></li>
+                        <li><a href="../classIntroduction/index.html">班级介绍</a></li>
+                        <li><a href="../learningPark/index.html">学习园地</a></li>
+                        <li><a href="../addressList/index.html">通讯录</a></li>
+                        <li class="active"><a href="./index.html">班级相册</a></li>
+                        <li><a href="../dowloadArea/index.html">下载专区</a></li>
                     </ul>
                 </div>
             </div>
@@ -29,7 +30,7 @@
             <div class="photoList">
                 <h3>活动照片</h3>
                 <div class="innerBox">
-                    <ul>
+                    <ul id="imgList">
                         <li>
                             <img class="head" src="./img/img.jpg" alt="">
                         </li>
@@ -55,7 +56,7 @@
                             <img class="head" src="./img/img08.jpg" alt="">
                         </li>
                     </ul>
-                    <button class="loadMore">查看更多</button>
+                    <button class="loadMore" id="loadMore">查看更多</button>
                 </div>
             </div>
         </div>
@@ -65,5 +66,6 @@
                 免责声明 | 使用条款 | 服务协议 
         </div>
     </div>
+    <script src="../js/album.js"></script>
 </body>
 </html>

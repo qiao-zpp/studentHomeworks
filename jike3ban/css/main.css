@@ -16,7 +16,7 @@ a:hover{
     width: 1000px;
     margin: 0 auto;
 }
-.clearit { clear:both; height:0; font-size:0; overflow:hidden; }
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
 .header{
     height: 60px;
     line-height: 60px;
@@ -34,7 +34,7 @@ a:hover{
 }
 .header .innerBox{
     height: 60px;
-    padding: 0 20px;
+    padding-left: 20px;
     background-color: rgba(255, 255, 255, 0.8);
 }
 .header .logo{
@@ -56,16 +56,23 @@ a:hover{
     width: 70%;
     float: right;
     text-align: right;
+    font-size: 0;
+    height: 60px;
 }
 .header .nav li{
     display: inline-block;
-    margin-left: 20px;
+    font-size: 14px;
+    height: 60px;
 }
 .header .nav li a{
     height: 60px;
     line-height: 60px;
     display: inline-block;
-    padding: 0 10px;
+    padding: 0 15px;
+}
+.header .nav li a:hover{
+    color: #fff;
+    background-color: #5a7fa1;
 }
 .header .nav li.active a{
     color: #fff;
@@ -169,12 +176,12 @@ a:hover{
     border-bottom: 2px solid #f8d6a6;
     margin-bottom: 20px;
 }
-.more{
+.inform .more{
     display: inline-block;
     width: 100px;
     height: 36px;
     line-height: 36px;
-    background-color: #DF5157;
+    background-color: #9c872c;
     color: #fff;
     text-align: center;
     font-size: 14px;
@@ -231,6 +238,7 @@ a:hover{
 
 }
 .photoList h3{
+    margin-top: 30px;
     font-size: 16px;
     height: 40px;
     line-height: 40px;
@@ -261,4 +269,209 @@ a:hover{
     color: #333;
     margin-top: 10px;
     margin-bottom: 10px;
+    cursor: pointer;
+}
+.news{
+    margin-bottom: 20px;
+}
+.news h3{
+    height: 34px;
+    line-height: 34px;
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;
+    border-bottom: 1px solid #9c872c;
+    margin-bottom: 10px;
+    margin-top: 30px;
+
+}
+.news h3 span{
+    padding: 0 10px;
+    background-color: #9c872c;
+    display: inline-block;
+    border-radius: 5px 5px 0 0;
+}
+.news table{
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.news table th{
+    border-bottom: 1px solid #ccc;
+    font-weight: normal;
+    height: 40px;
+    line-height: 40px;
+}
+.news table th.title{
+    text-align: left;
+}
+.news table td.title{
+    text-align: left;
+}
+.news table td.title a{
+    color: #5a7fa1;
+}
+.news table td.title a:hover{
+    color: #9c872c;
+    text-decoration: underline;
+}
+.news table td{
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #666;
+    border-bottom: 1px solid #ccc;
+}
+.news .more{
+    text-align: right;
+    line-height: 1;
+    font-size: 14px;
+    color: #5a7fa1;
+    padding-top: 15px;
+}
+.news .more a{
+    color: #5a7fa1;
+}
+.newsDetails h4{
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 1px solid #eee;
+}
+.newsDetails .intro{
+    line-height: 36px;
+    font-size: 12px;
+    color: #666;
+    text-align: center;
+}
+.newsDetails .currentPos{
+    margin-top: 30px;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 10px;
+}
+.newsDetails .currentPos span{
+    color: #9c872c;
+}
+#ArticleCnt p{
+    line-height: 26px;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 10px;
+    text-indent: 2em;
+}
+.dowloadArea{
+    margin-top: 30px;
+    min-height: 750px;
+}
+.dowloadArea h3{
+    margin-top: 30px;
+    font-size: 16px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f8d6a6;
+}
+.dowloadArea li{
+    line-height: 34px;
+}
+.classIntroduction{
+    min-height: 700px;
+}
+.classIntroduction h3{
+    text-align: center;
+    margin-top: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+}
+.classIntroduction h3 span{
+    display: inline-block;
+    font-size: 20px;
+    color: #666;
+    font-weight: bold;
+    border-bottom: 2px solid #f8d6a6;
+}
+.classIntroduction .innerBox{
+    text-align: center;
+    line-height: 36px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 40px;
+}
+.classIntroduction li{
+    padding-left: 30px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #333;
+}
+.classIntroduction img{
+    width: 500px;
+    height: auto;
+}
+.classIntroduction .prize{
+    width: 300px;
+    height: auto;
+}
+.classNews{
+    padding: 40px 0;
+    font-size: 0;
+    min-height: 665px;
+}
+.classNews .leftBox{
+    width: 35%;
+    float: left;
+}
+.classNews .rightBox{
+    width: 61%;
+    float: left;
+    padding-left: 4%;
+}
+.classNews .leftBox .newsItem{
+    margin-bottom: 30px;
+    border: 1px solid #eee;
+    border-radius: 5px 5px 0 0;
+}
+.classNews .leftBox .newsItem h4{
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #9c872c;
+    border-radius: 5px 5px 0 0;
+    text-indent: 15px;
+    font-weight: normal;
+}
+.classNews .leftBox .newsItem li{
+    font-size: 14px;
+    line-height: 18px;
+    color: #444;
+    padding: 10px 15px;
+}
+.classNews .rightBox h4{
+    font-size: 16px;
+    font-weight: normal;
+    color: #222;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+}
+.classNews .rightBox .time{
+    color: #999;
+    font-size: 12px;
+    line-height: 40px;
+}
+.classNews .rightBox p{
+    line-height: 30px;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+    text-indent: 2em;
+}
+.classNews .rightBox img{
+    margin-bottom: 15px;
+}
+.classNews .rightBox .publisher{
+    text-align: right;
+    line-height: 50px;
+    margin-top: 50px;
 }

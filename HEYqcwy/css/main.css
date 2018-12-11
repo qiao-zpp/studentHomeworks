@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+a:hover{
+    color: #fedb32;
+}
+.container{
+    width: 1000px;
+    margin: 0 auto;
+}
+.clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.header{
+    height: 90px;
+    line-height: 90px;
+    color: #333;
+    background-color: #fff;
+}
+.header .logoIcon{
+    display: inline-block;
+    height: 60px;
+    width: auto;
+    vertical-align: top;
+    margin-right: 15px;
+}
+.header .innerBox{
+    height: 60px;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.header .logo{
+    width: 25%;
+    float: left;
+    color: #fff;
+}
+.header .logo h1{
+    font-size: 20px;
+    height: 90px;
+    line-height: 90px;
+    color: #fedb32;
+}
+.header .logo h1 a{
+    color: #fedb32;
+    letter-spacing: 2px;
+}
+.header .nav{
+    width: 70%;
+    float: right;
+    text-align: right;
+    font-size: 0;
+    height: 90px;
+}
+.header .nav li{
+    display: inline-block;
+    font-size: 14px;
+    height: 90px;
+    line-height: 90px;
+    margin-left: 8px;
+}
+.header .nav li a{
+    height: 32px;
+    line-height: 32px;
+    display: inline-block;
+    padding: 0 15px;
+    border-radius: 16px;
+}
+.header .nav li a:hover{
+    color: #fff;
+    background-color: #fedb32;
+}
+.header .nav li.active a{
+    color: #fff;
+    background-color: #fedb32;
+}
+.banner img{
+    display: block;
+}
+.searchPosition{
+    height: 122px;
+    background: #fedb32;
+    border-bottom: 2px solid #313534;
+    text-align: center;
+}
+.searchPosition p{
+    font-size: 18px;
+    line-height: 38px;
+    color: #313534;
+    padding-top: 10px;
+}
+.searchPosition .searchBox{
+    font-size: 0;
+}
+.searchPosition .searchInput{
+    width: 412px;
+    height: 28px;
+    padding-left: 10px;
+    font-size: 14px;
+    color: #555555;
+    border: 1px solid #888888;
+    background-color: #fff;
+    border-radius: 14px 0 0 14px;
+    border-right: none;
+    vertical-align: top;
+}
+.searchPosition .searchBtn{
+    display: inline-block;
+    width: 161px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #f3f3f3;
+    background: #313534;
+    font-size: 16px;
+    border-radius: 0 30px 30px 0;
+    cursor: pointer;
+    vertical-align: top;
+}
+.searchPosition .hot-keyword{
+    font-size: 12px;
+    color: #555555;
+    line-height: 32px;
+}
+.searchPosition .hot-keyword a{
+    display: inline-block;
+    padding: 0 7px;
+}
+.searchPosition .hot-keyword a:hover{
+    color: #222;
+}

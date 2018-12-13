@@ -12,16 +12,32 @@ a{
 a:hover{
     color: #fedb32;
 }
+input{
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    -webkit-user-select: none;
+    -moz-user-focus: none;
+    -moz-user-select: none;
+    -webkit-appearance:none;
+    outline: none;
+    border: none;
+}
 .container{
     width: 1000px;
     margin: 0 auto;
 }
 .clearfix:after { content:"."; display:block; height:0; visibility:hidden; clear:both; }
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
 .header{
     height: 90px;
     line-height: 90px;
     color: #333;
     background-color: #fff;
+    border-bottom: 1px solid #313534;
 }
 .header .logoIcon{
     display: inline-block;
@@ -83,6 +99,8 @@ a:hover{
 }
 .banner img{
     display: block;
+    width: 100%;
+    height: auto;
 }
 .searchPosition{
     height: 122px;
@@ -102,7 +120,7 @@ a:hover{
 .searchPosition .searchInput{
     width: 412px;
     height: 28px;
-    padding-left: 10px;
+    padding-left: 15px;
     font-size: 14px;
     color: #555555;
     border: 1px solid #888888;
@@ -135,4 +153,328 @@ a:hover{
 }
 .searchPosition .hot-keyword a:hover{
     color: #222;
+}
+.searchPositionList{
+    padding: 20px 0;
+}
+.searchPositionList dt{
+    color: #333;
+    font-size: 24px;
+    line-height: 1;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+.searchPositionList dt h4{
+    font-weight: normal;
+}
+.searchPositionList dt p{
+    color: #666;
+    line-height: 30px;
+    font-size: 16px;
+}
+.searchPositionList dd{
+    height: 60px;
+    padding: 20px 0;
+    padding-left: 80px;
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.searchPositionList .positionImg{
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    border: 1px solid #ddd;
+    position: absolute;
+    left: 0;
+    top: 20px;
+    font-size: 0;
+}
+.searchPositionList .positionImg::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -5px;
+    width: 4px;
+    height: 40px;
+    background: #fedb32;
+    border-radius: 2px 0 0 2px;
+}
+.searchPositionList .positionImg img{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.searchPositionList .positionDetails{
+    font-size: 16px;
+    color: #34bef4;
+    line-height: 1;
+}
+.searchPositionList .positionDetails a{
+    color: #34bef4;
+}
+.searchPositionList .positionInfoDetails{
+    color: #555;
+    margin-top: 20px;
+}
+.searchPositionList .positionInfoDetails .red{
+    color: #f26167;
+}
+.searchPositionList .lookMore{
+    display: block;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 17px;
+    background-color: #fedb32;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    margin: 30px 0;
+}
+.footer{
+    height: 70px;
+    line-height: 70px;
+    border-top: 1px solid #ddd;
+    font-size: 14px;
+    color: #444;
+    text-align: center;
+}
+/*热门职位*/
+.positionRecommendation .positionRecommendationList{
+    font-size: 0;
+    padding: 30px 0;
+}
+.positionRecommendation .positionRecommendationList li{
+    display: inline-block;
+    width: 25%;
+}
+.positionRecommendation .positionRecommendationList li dl{
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    padding-left: 60px;
+}
+.positionRecommendation .positionRecommendationList li:nth-child(4) dl{
+    border-right: none;
+}
+.positionRecommendation .positionRecommendationList li dt{
+    color: #333;
+    font-size: 16px;
+    line-height: 35px;
+    margin-bottom: 20px;
+}
+.positionRecommendation .positionRecommendationList li dd{
+    font-size: 14px;
+    color: #666;
+    line-height: 1;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.positionRecommendation .positionRecommendationList li dd .num{
+    color: #999;
+}
+.positionRecommendation .positionRecommendationList li .icon{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-image: url("../hotJobs/img/imgs.png");
+    background-position: -150px -140px;
+    vertical-align: top;
+}
+.positionRecommendation .positionRecommendationList li:nth-child(2) .icon{
+    background-position: -150px -175px;
+}
+.positionRecommendation .positionRecommendationList li:nth-child(2) .icon{
+    background-position: -150px -210px;
+}
+.positionRecommendation .positionRecommendationList li:nth-child(2) .icon{
+    background-position: -150px -245px;
+}
+/*职位详情*/
+.PositionName{
+    background: #f5f5f5;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0;
+}
+.PositionName p{
+    font-size: 14px;
+    color: #555;
+    line-height: 30px;
+}
+.PositionName h4{
+    font-size: 24px;
+    color: #222;
+    line-height: 50px;
+    font-weight: normal;
+}
+.PositionName div{
+    font-size: 14px;
+    color: #555;
+    line-height: 1;
+    padding: 10px 0 8px;
+}
+.PositionName div span{
+    display: inline-block;
+    padding: 0 10px;
+    border-right: 1px solid #ccc;
+}
+.PositionName div span.red{
+    color: #f26167;
+}
+.PositionDetails dl{
+    padding: 20px 0;
+}
+.PositionDetails dt{
+    font-size: 18px;
+    padding-left: 14px;
+    line-height: 36px;
+    color: #313534;
+    position: relative;
+    margin-bottom: 20px;
+}
+.PositionDetails dt::before{
+    content: "";
+    width: 4px;
+    height: 16px;
+    background: #fedb32;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+.PositionDetails dd{
+    font-size: 14px;
+    line-height: 26px;
+    color: #444;
+}
+/*职场资讯*/
+.workplaceInformation{
+    padding-bottom: 20px;
+}
+.workplaceInformation dl{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+.workplaceInformation dt{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+    color: #34bef4;
+}
+.workplaceInformation dd{
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+}
+.workplaceInformation dd a:hover{
+    color: #222;
+}
+/*名企招聘*/
+.FamousEnterprise{
+    width: 100%;
+    height: 650px;
+    background: url("../FamousEnterprise/img/banner.png") no-repeat;
+    background-size: cover;
+}
+.FamousEnterprise .FamousEnterpriseList{
+    font-size: 0;
+    padding-top: 75px;
+    margin-right: -15px;
+}
+.FamousEnterprise .FamousEnterpriseList li{
+    display: inline-block;
+    margin-bottom: 15px;
+    overflow: hidden;
+    position: relative;
+}
+.FamousEnterprise .FamousEnterpriseList .innerBox{
+    height: 100%;
+    margin-right: 15px;
+    background-color: #fff;
+}
+.FamousEnterprise .FamousEnterpriseList li.one{
+    width: 25%;
+    height: 80px;
+}
+.FamousEnterprise .FamousEnterpriseList li img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.FamousEnterprise .FamousEnterpriseList li.two{
+    width: 33.333%;
+    height: 116px;
+}
+.FamousEnterprise .FamousEnterpriseList li.three{
+    width: 25%;
+    height: 130px;
+}
+/*校园宣讲会*/
+.campusSeminarList .banner{
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+.campusSeminarList{
+    padding: 20px 0;
+}
+.campusSeminarList dt{
+    color: #333;
+    font-size: 24px;
+    line-height: 1;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+}
+.campusSeminarList dt h4{
+    font-weight: normal;
+}
+.campusSeminarList dt p{
+    color: #666;
+    line-height: 30px;
+    font-size: 16px;
+}
+.campusSeminarList dd{
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-top: 20px;
+}
+.campusSeminarList dd .title{
+    line-height: 1;
+    font-size: 18px;
+    padding-bottom: 15px;
+    color: #222;
+}
+.campusSeminarList dd .time{
+    color: #ff6000;
+    font-size: 14px;
+    line-height: 1;
+    padding-bottom: 10px;
+}
+.campusSeminarList dd .time::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url("../campusSeminar/img/imgs.png") no-repeat;
+    background-position: 0 5px;
+    vertical-align: middle;
+}
+.campusSeminarList dd .address{
+    color: #444;
+    line-height: 1;
+    font-size: 14px;
+}
+.campusSeminarList dd .address::before{
+    content: '';
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: url("../campusSeminar/img/imgs.png") no-repeat;
+    background-position: 0 -25px;
+    vertical-align: middle;
 }

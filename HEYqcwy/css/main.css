@@ -322,7 +322,11 @@ input{
     color: #f26167;
 }
 .PositionDetails dl{
-    padding: 20px 0;
+    padding: 20px 0 40px;
+    border-bottom: 1px dashed #ccc;
+}
+.PositionDetails dl:nth-child(2){
+    border-bottom: none;
 }
 .PositionDetails dt{
     font-size: 18px;
@@ -346,13 +350,26 @@ input{
     line-height: 26px;
     color: #444;
 }
+.PositionDetails .jobApplication{
+    display: block;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-radius: 17px;
+    background-color: #fedb32;
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+    margin: 50px 0;
+    cursor: pointer;
+}
 /*职场资讯*/
 .workplaceInformation{
     padding-bottom: 20px;
 }
 .workplaceInformation dl{
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 .workplaceInformation dt{
     height: 40px;
@@ -360,6 +377,7 @@ input{
     border-bottom: 1px solid #ddd;
     font-size: 16px;
     color: #34bef4;
+    margin-bottom: 15px;
 }
 .workplaceInformation dd{
     height: 36px;
@@ -368,6 +386,20 @@ input{
 }
 .workplaceInformation dd a:hover{
     color: #222;
+}
+/*咨询详情*/
+.articleDetails{
+    padding: 10px 0 50px;
+    font-size: 14px;
+}
+.articleDetails h3{
+    font-size: 16px;
+    color: #333;
+    font-weight: normal;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    margin-bottom: 20px;
 }
 /*名企招聘*/
 .FamousEnterprise{
@@ -398,8 +430,6 @@ input{
 }
 .FamousEnterprise .FamousEnterpriseList li img{
     position: absolute;
-    left: 50%;
-    top: 50%;
     top: 0;
     left: 0;
     right: 0;
@@ -414,7 +444,50 @@ input{
     width: 25%;
     height: 130px;
 }
-/*校园宣讲会*/
+/*企业详情*/
+.enterpriseDetails{
+    position: relative;
+    padding: 0!important;
+    padding-left: 120px!important;
+    margin-bottom: 10px;
+}
+.enterpriseDetails .innerBox{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 0;
+    top: 10px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    padding: 0;
+}
+.enterpriseDetails .innerBox img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+.enterpriseInfo .title{
+    color: #333;
+    font-size: 22px;
+    line-height: 1;
+    border-bottom: 1px solid #eee;
+    padding: 10px 0;
+    padding-top: 30px;
+}
+.enterpriseInfo .title h4{
+    font-weight: normal;
+}
+.enterpriseInfo .title p{
+    color: #666;
+    line-height: 30px;
+    font-size: 16px;
+}
+    /*校园宣讲会*/
 .campusSeminarList .banner{
     width: 100%;
     height: auto;

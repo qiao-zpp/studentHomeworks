@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>董铠睿的个人主页</title>
+    <link rel="stylesheet" href="./lib/prism.css">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+<div class="headerBg">
+    <div class="areaheart">
+        <div class="header clearfix">
+            <h1 class="fl"><a href="../index.html" title="董铠睿的个人主页"><img class="logo" src="../img/logo.png" alt=""></a></h1>
+            <ul class="nav fr">
+                <li class="active"><a href="../index.html">个人首页</a></li>
+                <li><a href="./personalHobby/index.html">个人爱好</a></li>
+                <li><a href="./TechnologySharing/index.html">技术分享</a></li>
+                <li><a href="./goodStationSharing/index.html">随笔札记</a></li>
+                <li><a href="./musicAppreciation/index.html">关于我</a></li>
+                <li><a href="./messageBoard/index.html">留言</a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h3>董铠睿</h3>
+            <p>董铠睿个人主页</p>
+        </div>
+    </div>
+</div>
+<div class="content articleDetailsBox">
+    <div class="areaheart">
+        <div class="crumbs">
+            <h2 class="place">您现在的位置是：<a href="./index.html">技术分享</a>&nbsp;&gt;&nbsp;<a href="./details.html">文章详情</a></h2>
+        </div>
+        <h3>人最该警醒的一件事：习惯低配，庸碌无为</h3>
+        <p class="info"><span class="timer">2018-12-13 17:53:59</span><span class="hadRead">0人已阅读</span></p>
+        <img src="../img/articleBg01.jpg" alt="">
+        <p class="articleDetails">
+            <pre>
+            <code class="language-css">
+                function IsURL(str_url) {
+                    var strRegex =
+                        "^((https|http|ftp|rtsp|mms)?://)" +
+                        "?(([0-9a-z_!~*'().&=+$%-]+: )?[0-9a-z_!~*'().&=+$%-]+@)?" + //ftp的user@
+                        "(([0-9]{1,3}.){3}[0-9]{1,3}" + // IP形式的URL- 199.194.52.184
+                        "|" + // 允许IP和DOMAIN（域名）
+                        "([0-9a-z_!~*'()-]+.)*" + // 域名- www.
+                        "([0-9a-z][0-9a-z-]{0,61})?[0-9a-z]." + // 二级域名
+                        "[a-z]{2,6})" + // first level domain- .com or .museum
+                        "(:[0-9]{1,4})?" + // 端口- :80
+                        "((/?)|" + // a slash isn't required if there is no file name
+                        "(/[0-9a-z_!~*'().;?:@&=+$,%#-]+)+/?)$";
+                    var re = new RegExp(strRegex);
+                    //re.test()
+                    if (re.test(str_url)) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            </code>
+            </pre>
+        </p>
+    </div>
+</div>
+<div class="footer">
+    COPYRIGHT 2018 董铠睿. ALL RIGHTS RESERVED.
+</div>
+<script src="./lib/prism.js"></script>
+</body>
+</html>

@@ -170,3 +170,23 @@ a{
     margin-bottom: 10px;
     margin-top: 20px;
 }
+.articleDetailsBox h3{
+    font-weight: normal;
+    line-height: 50px;
+}
+.articleDetailsBox .info span{
+    display: inline-block;
+    margin-right: 15px;
+    color: #999;
+    line-height: 1;
+    margin-bottom: 15px;
+}
+.articleDetailsBox .articleDetails{
+    line-height: 30px;
+    padding-bottom: 40px;
+}
+.articleDetailsBox img{
+    width: 500px;
+    height: auto;
+    margin-bottom: 15px;
+}

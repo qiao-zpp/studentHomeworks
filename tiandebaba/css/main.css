@@ -170,3 +170,92 @@ html,body{
     width: 240px;
     display: block;
 }
+.StudyExperienceList{
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+    padding-top: 80px;
+}
+.StudyExperienceList p{
+    font-size: 16px;
+    color: #eee;
+    line-height: 40px;
+    text-align: center;
+}
+.StudyExperienceList .collegeIntro{
+    font-size: 0;
+    margin-top: 50px;
+}
+.StudyExperienceList .collegeIntro li{
+    display: inline-block;
+    width: 50%;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #eee;
+    text-align: center;
+}
+.StudyExperienceList .collegeIntro li .logoBox{
+    height: 150px;
+    line-height: 150px;
+}
+.StudyExperienceList .collegeIntro li:nth-child(1) .logoBox{
+    border-right: 1px solid #16e7a5;
+}
+.StudyExperienceList .collegeIntro li:nth-child(1) img{
+    width: 150px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.StudyExperienceList .collegeIntro li:nth-child(2) img{
+    width: 80%;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.StudyExperienceList .collegeIntro li a{
+    line-height: 60px;
+    color: #eee;
+    /*text-decoration: none;*/
+}
+.introCollege{
+    color: #fff;
+    text-align: center;
+    padding-top: 20px;
+}
+.introCollege h3{
+    line-height: 40px;
+    padding-top: 20px;
+}
+.introCollege .zzj_24f_3a{
+    padding-top: 20px;
+    text-align: left;
+}
+.Contact .ContactList{
+    font-size: 0;
+}
+.Contact .ContactList li{
+    font-size: 18px;
+    color: #eee;
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 40px;
+}
+.Contact .ContactList li img{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+}
+.messageList{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.messageList li{
+    padding-left: 300px;
+    font-size: 16px;
+    color: #eee;
+    padding-bottom: 20px;
+}
